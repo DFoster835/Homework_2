@@ -1,0 +1,77 @@
+DFoster835@Dimitris
+MBP ~ % mkdir git-workshop
+	DFoster835@Dimitris-MBP ~ % cd git-workshop
+	DFoster835@Dimitris-MBP git-workshop % git init
+	Initialized empty Git repository in /Users/DFoster835/git-workshop/.git/
+	DFoster835@Dimitris-MBP git-workshop % mkdir git-add-exercise
+	DFoster835@Dimitris-MBP git-workshop % cd git-add-exercise
+	DFoster835@Dimitris-MBP git-add-exercise % echo Content within file > add-exercise.txt
+	DFoster835@Dimitris-MBP git-add-exercise % echo File to be deleted eventually > delete-me.txt
+	DFoster835@Dimitris-MBP git-add-exercise % touch third-file.txt
+	DFoster835@Dimitris-MBP git-add-exercise % git status
+	On branch master
+	
+	No commits yet
+	
+	Untracked files:
+	(use "git add <file>..." to include in what will be committed)
+	./
+	
+	nothing added to commit but untracked files present (use "git add" to track)
+	DFoster835@Dimitris-MBP git-add-exercise % Initial commit
+	zsh: command not found: Initial
+	DFoster835@Dimitris-MBP git-add-exercise % echo More text! >> add-exercise.txt
+	DFoster835@Dimitris-MBP git-add-exercise % rm delete-me.txt
+	DFoster835@Dimitris-MBP git-add-exercise % git status
+	On branch master
+	
+	No commits yet
+	
+	Untracked files:
+	(use "git add <file>..." to include in what will be committed)
+	./
+	
+	nothing added to commit but untracked files present (use "git add" to track)
+	DFoster835@Dimitris-MBP git-add-exercise % git add -u
+	DFoster835@Dimitris-MBP git-add-exercise % git status
+	On branch master
+	
+	No commits yet
+	
+	Untracked files:
+	(use "git add <file>..." to include in what will be committed)
+	./
+	
+	nothing added to commit but untracked files present (use "git add" to track)
+	DFoster835@Dimitris-MBP git-add-exercise % git reset
+	DFoster835@Dimitris-MBP git-add-exercise % git add
+	Nothing specified, nothing added.
+	Maybe you wanted to say 'git add .'?
+	DFoster835@Dimitris-MBP git-add-exercise % git status
+	On branch master
+	
+	No commits yet
+	
+	Untracked files:
+	(use "git add <file>..." to include in what will be committed)
+	./
+	
+	nothing added to commit but untracked files present (use "git add" to track)
+	DFoster835@Dimitris-MBP git-add-exercise % git reset
+	DFoster835@Dimitris-MBP git-add-exercise % git add -A
+	DFoster835@Dimitris-MBP git-add-exercise % git status
+	On branch master
+	
+	No commits yet
+	
+	Changes to be committed:
+	(use "git rm --cached <file>..." to unstage)
+	new file: add-exercise.txt
+	new file: third-file.txt
+	
+	DFoster835@Dimitris-MBP git-add-exercise % git reset
+	DFoster835@Dimitris-MBP git-add-exercise % git add *
+	DFoster835@Dimitris-MBP git-add-exercise % git add -A
+	DFoster835@Dimitris-MBP git-add-exercise % git commit -m "Completed add exercise"
+	[master (root-commit) 375fde8] Completed add exercise
+
